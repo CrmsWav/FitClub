@@ -1,0 +1,376 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62, 5%;
+  /* overflow: scroll; */
+}
+
+/* ref violet = rgb(124, 40, 99) */
+
+.white_txt {
+  color: whitesmoke;
+}
+
+/*************************
+BUTTONS
+*************************/
+
+button {
+  padding: 10px;
+  border: none;
+  font-weight: 700;
+}
+
+/*************************
+HEADER
+*************************/
+
+header {
+  background-image: linear-gradient(rgba(124, 40, 99, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/fitness.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 500px;
+}
+
+.navHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+.containerLogo {
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  width: 4rem;
+}
+
+/* .logo {
+  width: 4%;
+} */
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: auto;
+  white-space: nowrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+.inscription {
+  background-color: rgb(124, 40, 99);
+  padding: 4%;
+}
+
+h1 {
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+header p,
+h1 {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.F {
+  color: tomato;
+}
+
+/*************************
+MAIN
+*************************/
+
+.challenge {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+.challenge h2 {
+  font-weight: 700;
+  padding: 25px;
+}
+
+.containerFitness {
+  width: 50%;
+  display: flex;
+  /* box-shadow: 0px 0px 10px 0px; */
+}
+
+.fitnessman {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url(../img/fitnessman.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  margin-top: -80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fitnesswoman {
+  background-image: linear-gradient(
+      rgba(124, 40, 99, 0.7),
+      rgba(124, 40, 99, 0.4)
+    ),
+    url(../img/fitnesswoman.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  margin-top: -80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fullbody,
+.crossfit {
+  text-transform: uppercase;
+}
+
+.objectif {
+  margin-top: 100px;
+}
+
+.p_objectif {
+  margin-bottom: 100px;
+  padding: 15px;
+}
+
+section p,
+.fullbody,
+.objectif,
+.fitness {
+  text-align: center;
+}
+
+.liste {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.liste li {
+  text-align: center;
+  flex-basis: calc(100% / 4);
+  padding: 2%;
+}
+
+.liste li img {
+  width: 15%;
+}
+
+.corps,
+.machines,
+.coach,
+.suivi {
+  border-top: solid 1px rgb(222, 222, 222);
+  border-right: solid 1px rgb(222, 222, 222);
+}
+
+/* --------------------------------------- */
+
+/* .fit {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+} */
+
+.fitness {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 300px;
+  width: 100%;
+}
+
+.fitness .fitnessImg {
+  display: flex;
+  align-items: center;
+  width: 55%;
+  background-image: linear-gradient(
+      rgba(124, 40, 99, 0.4),
+      rgba(124, 40, 99, 0.2)
+    ),
+    url(../img/crossfit.jpg);
+  background-position: center;
+  background-size: 150%;
+  background-repeat: no-repeat;
+}
+
+.autrement {
+  background-color: black;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.autrement h2 {
+  margin-left: -72%;
+}
+
+.autrement p {
+  padding: 0 50% 0 0;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.autrement button {
+  width: 20%;
+  margin-left: 2%;
+  margin-top: 5px;
+  background-color: rgb(124, 40, 99);
+}
+
+/* --------------------------------- */
+
+.avantages {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.avantages article img {
+  width: 20%;
+}
+
+.avantages article p {
+  text-align: center;
+}
+
+.avantages article {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 1% 3% 1%;
+}
+
+.avantages article:nth-last-of-type(even) {
+  background-color: rgb(224, 224, 224, 0.4);
+}
+
+/*************************
+FOOTER
+*************************/
+
+footer {
+  background-color: black;
+  border-top: solid 10px rgb(124, 40, 99);
+  margin-top: -5px;
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+}
+
+.footerLeft {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px;
+  color: whitesmoke;
+}
+
+.footerLeft img {
+  width: 10%;
+}
+
+.footerLeft p {
+  text-align: right;
+  width: 45%;
+}
+
+.reseaux .fab {
+  color: white;
+}
+
+.contacter {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin: -100px 0 50px 0;
+  z-index: 1;
+}
+
+.contacter h2 {
+  margin: 10% 0 3% 0;
+}
+
+.pContacter {
+  text-align: center;
+  margin: 0 15% 0 15%;
+}
+
+.contacter input {
+  margin: 8% 0 8% 0;
+  width: 70%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.contacter button {
+  margin: 25px;
+  padding: 5% 4% 5% 4%;
+  background-color: rgb(124, 40, 99);
+  color: whitesmoke;
+}
+
+.footerRight {
+  width: 35%;
+  padding: 20px;
+  color: whitesmoke;
+}
+
+.footerRight .fas {
+  color: rgb(124, 40, 99);
+  margin-right: 5px;
+}
+
+.h4Adress {
+  margin-top: 0;
+}
+
+.footerRight p {
+  margin-left: 17px;
+}
+
+/*************************
+MEDIAS QUERIES
+*************************/
+
+/*TABLET*/
+/*@media screen and (min-width: 768px;) {
+
+}*/
+
+/*DESKTOP*/
+/*@media screen and (min-width: 990px;) {
+    
+}*/
