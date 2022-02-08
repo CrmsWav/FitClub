@@ -470,9 +470,6 @@ MEDIAS QUERIES
 }
 
 @media only screen and (max-width: 500px) {
-  .containerLogo {
-    /* width: 25%; */
-  }
   .containerFitness {
     flex-direction: column;
     padding: 0;
