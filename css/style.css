@@ -5,6 +5,10 @@
 
 html {
   font-size: 62, 5%;
+}
+
+body {
+  margin: 0;
   /* overflow: scroll; */
 }
 
@@ -41,7 +45,7 @@ header {
 .navHeader {
   display: flex;
   justify-content: space-between;
-  padding: 1%;
+  padding: 20px;
 }
 
 .containerLogo {
@@ -110,9 +114,9 @@ MAIN
 }
 
 .containerFitness {
-  width: 50%;
+  width: 100%;
   display: flex;
-  /* box-shadow: 0px 0px 10px 0px; */
+  justify-content: center;
 }
 
 .fitnessman {
@@ -126,6 +130,7 @@ MAIN
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: 0px 0px 10px 0px;
 }
 
 .fitnesswoman {
@@ -141,6 +146,7 @@ MAIN
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: 0px 0px 10px 0px;
 }
 
 .fullbody,
@@ -220,6 +226,7 @@ section p,
   background-position: center;
   background-size: 150%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .autrement {
@@ -236,12 +243,13 @@ section p,
 .autrement p {
   padding: 0 50% 0 0;
   text-align: left;
-  margin-left: 5px;
+  margin: 10px 15px;
 }
 
 .autrement button {
   width: 20%;
-  margin-left: 2%;
+  min-width: 85px;
+  margin: 10px 15px;
   margin-top: 5px;
   background-color: rgb(124, 40, 99);
 }
@@ -251,6 +259,10 @@ section p,
 .avantages {
   display: flex;
   flex-flow: row wrap;
+}
+
+.avantages h3 {
+  text-align: center;
 }
 
 .avantages article img {
@@ -365,12 +377,155 @@ footer {
 MEDIAS QUERIES
 *************************/
 
-/*TABLET*/
-/*@media screen and (min-width: 768px;) {
+@media only screen and (max-width: 1280px) {
+  .challenge ul li {
+    flex-wrap: wrap;
+  }
 
-}*/
+  .fitness {
+    flex-direction: column;
+    height: 100%;
+  }
 
-/*DESKTOP*/
-/*@media screen and (min-width: 990px;) {
-    
-}*/
+  .fitness .fitnessImg {
+    height: 245px;
+    width: 100%;
+    /* min-width: 594px; */
+  }
+
+  .autrement {
+    width: 100%;
+    justify-content: space-around;
+    padding: 15px;
+  }
+
+  .autrement h2 {
+    text-align: start;
+    margin: 10px 15px;
+  }
+
+  .autrement p {
+    width: 90%;
+    padding: 0;
+    margin: 10px 15px;
+  }
+}
+
+@media only screen and (max-width: 965px) {
+  .avantages article {
+    width: 100%;
+  }
+  .avantages article img {
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .containerFitness {
+    padding: 5%;
+  }
+  .liste li img {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .liste {
+    flex-direction: column;
+  }
+
+  .liste li img {
+    width: 7%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacter {
+    margin: 0;
+    width: 80%;
+  }
+
+  .footerLeft {
+    width: 100%;
+    align-items: center;
+  }
+
+  .footerLeft p {
+    text-align: center;
+    width: 80%;
+  }
+
+  .footerRight {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footerRight h4 {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .containerLogo {
+    /* width: 25%; */
+  }
+  .containerFitness {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .fitnesswoman {
+    margin: 0;
+  }
+
+  .footerRight {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerRight div {
+    margin: 10px;
+    width: 37%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .containerLogo {
+    background-position: top;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: space-around;
+    /* margin: 10px; */
+  }
+
+  nav a {
+    margin: 10px;
+  }
+
+  .inscription {
+    padding: 8%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 305px) {
+  .footerRight div {
+    margin: 10px;
+    width: 61%;
+  }
+}
